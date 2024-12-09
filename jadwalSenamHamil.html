@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" id="jadwalDokter">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RS Anugerah Bunda Khatulistiwa</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://rsabk.co.id/asset/favicon.ico"
+    />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          loop: true, // Jika ingin slider loop
+        });
+      });
+    </script>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/jadwalSenamHamil.css" rel="stylesheet" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".toggle-btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const parent = this.closest(".icon-box");
+            const fullText = parent.querySelector(".full-text");
+            const shortText = parent.querySelector(".short-text");
+
+            if (fullText.style.display === "none") {
+              fullText.style.display = "block";
+              shortText.style.display = "none";
+              this.textContent = "Tutup";
+            } else {
+              fullText.style.display = "none";
+              shortText.style.display = "block";
+              this.textContent = "Baca Selengkapnya";
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body class="">
+    <header id="header" class="header sticky-top">
+      <div class="topbar d-flex align-items-center">
+        <div
+          class="container d-flex justify-content-center justify-content-md-between"
+        >
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"
+              ><a href=" rsabk.ptk@gmail.com">rsabk.ptk@gmail.com</a></i
+            >
+            <i class="bi bi-phone d-flex align-items-center ms-4"
+              ><span>0561-581818</span></i
+            >
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a
+              href="https://wa.me/6285249922000"
+              class="whatsapp"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/rsanugerahbundakhatulistiwa"
+              class="facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/rs_abk/?hl=en" class="instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <div class="branding d-flex align-items-center">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <!-- <a href="index.html" class="logo d-flex align-items-center me-auto"> -->
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <a class="navbar-brand" href="#">
+            <img
+              class="brand-logo"
+              src="https://rsabk.co.id/asset/favicon.ico"
+              alt="RS ABK"
+            />
+            <h4 class="brand-text">RS ABK</h4>
+          </a>
+          <!-- </a> -->
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li>
+                <a href="index.html#hero" >Beranda<br /></a>
+              </li>
+              <li><a href="index.html#about">Tentang Kami</a></li>
+              <li><a href="index.html#services">Layanan</a></li>
+              <li><a href="index.html#departments">Dapartemen</a></li>
+              <li><a href="index.html#doctors">Dokter</a></li>
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Jadwal</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="jadwalDokter.html">Jadwal Dokter</a></li>
+                  <!-- <li class="dropdown">
+                    <a href="#"
+                      ><span>Deep Dropdown</span>
+                      <i class="bi bi-chevron-down toggle-dropdown"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li> -->
+                  <li><a href="jadwalPoliPsikolog.html">Jadwal Poli Psikolog</a></li>
+                  <li><a href="jadwalPoliFisioterapi.html">Jadwal Poli Fisioterapi</a></li>
+                  <li><a href="jadwalSenamHamil.html"  class="active">Senam Hamil</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#contact">Kontak</a></li>
+                            <li><a href="berita.html#">Berita</a></li>
+
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+
+          <a class="cta-btn d-none d-sm-block" href="index.html#appointment"
+            >Daftar Online</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="page-header">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="heading-block">
+              <h2 class="heading"> <span class="color1">Senam</span> Hamil</h2>
+              <p class="sub-heading">Berikut adalah Syarat senam ibu hamil di RS Anugerah Bunda Khatulistiwa.</p>
+          </div>               
+      </div>
+      </div>
+    </div>
+    <div class="departmen-single">
+        
+        <div class="senam-hamil-container">
+          <div class="row">
+            <div class="col-sm-5 mt-20">
+              <h4 class="senam-hamil-heading">Syarat Mengikuti Kelas Senam Hamil</h4>
+              <ul id="syaratList" class="senam-hamil-list-styled">
+                <!-- Data from API will be inserted here -->
+              </ul>
+            
+              <h4 class="senam-hamil-heading">Tahapan Yoga (Senam Hamil)</h4>
+              <ul id="tahapanList" class="senam-hamil-list-styled">
+                <!-- Data from API will be inserted here -->
+              </ul>
+            </div>
+            <div class="col-sm-7 mt-20">
+              <h4 class="senam-hamil-heading">Manfaat Senam Hamil</h4>
+              <ul id="manfaatList" class="senam-hamil-list-styled">
+                <!-- Data from API will be inserted here -->
+              </ul>
+            </div>
+            
+              <!-- <div class="col-sm-5 mt-20">
+                  <h4 class="senam-hamil-heading">Syarat Mengikuti Kelas Senam Hamil</h4>
+                  <ul class="senam-hamil-list-styled">
+                      <li>${item.syarat}</li>
+                      <li>Ibu hamil usia dibawah 6 bln atau 24 Minggu dengan komplikasi tidak boleh mengikuti kelas senam hamil.</li>
+                  </ul>
+                  <h4 class="senam-hamil-heading">Tahapan Yoga (Senam Hamil)</h4>
+                  <ul class="senam-hamil-list-styled">
+                      <li>Cek tensi ibu dan jantung baby</li>
+                      <li>Doa relaksasi dan meditasi</li>
+                      <li>Pemanasan</li>
+                      <li>Gerakan inti yoga prenatal</li>
+                      <li>Pendinginan</li>
+                      <li>Relaksasi Hypnobirthing</li>
+                      <li>Edukasi</li>
+                      <li>Penutup</li>
+                  </ul>
+              </div>
+              <div class="col-sm-7 mt-20">
+                  <h4 class="senam-hamil-heading">Manfaat Senam Hamil</h4>
+                  <ul class="senam-hamil-list-styled">
+                      <li>Dapat melatih berbagai macam teknik pernafasan yang penting pada saat persalinan supaya persalinan dapat berjalan lancar.</li>
+                      <li>Melatih sikap tubuh yang baik agar dapat mengurangi sakit pada pinggang, punggung, panggul dan lipat paha.</li>
+                      <li>Ibu hamil bisa memperoleh informasi tentang kehamilan dan persiapannya dalam menghadapi persalinan.</li>
+                      <li>Mempersiapkan stamina sebelum melahirkan.</li>
+                      <li>Mengurangi ketegangan fisik dan mental yang dapat mempengaruhi proses persalinan.</li>
+                      <li>Mengetahui teknik relaksasi yang berguna saat persalinan.</li>
+                      <li>Dapat mengurangi masalah tidur selama hamil, karena ibu hamil sulit mendapatkan posisi tidur yang nyaman atau ideal.</li>
+                      <li>Dapat meningkatkan kebugaran fisik dan mental terutama bagi ibu yang bekerja.</li>
+                      <li>Mengembalikan lebih cepat bentuk tubuh setelah persalinan ke keadaan sebelum hamil.</li>
+                  </ul>
+              </div> -->
+          </div>
+          <div class="row mt-40">
+              <div class="col-sm-12">
+                  <h2 class="pendaftaran-senam-hamil-heading">Pendaftaran Senam Hamil</h2>
+                  <hr class="pendaftaran-senam-hamil-hr">
+                  <div class="callout-senam-hamil">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <h3 class="inverse font-2 font24">Daftarkan diri Anda <strong>di Kelas Senam Hamil kami</strong></h3>
+                              <p class="inverse">Untuk pendaftaran dapat menghubungi kami pada hari Sabtu atau pagi hari Minggu sebelum Kelas Senam Hamil dimulai.</p>
+                          </div>
+                          <div class="col-sm-6 text-right">
+                              <div class="contact-info">
+                                  <i class="bi bi-whatsapp"></i>
+                                  <span class="call-us"><strong class="inverse text-capitalize font20">Hubungi kami!</strong><br/>085249922000</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+    </div>
+    </div>
+    <br />
+    <footer id="footer" class="footer light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">RS Anugerah Bunda Khatulistiwa</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Jl. Jenderal Ahmad Yani, Bangka Belitung Laut,</p>
+              <p>
+                Kec. Pontianak Tenggara, Kota Pontianak, Kalimantan Barat 78124
+              </p>
+              <p class="mt-4">
+                <strong>Phone:</strong> <span>0561-581818</span>
+              </p>
+              <p><strong>Email:</strong> <span>rsabk.ptk@gmail.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a
+                href="https://wa.me/6285249922000"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a href="https://www.facebook.com/rsanugerahbundakhatulistiwa/"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/rs_abk"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Tautan Kami</h4>
+            <ul>
+              <li><a href="index.html#hero">Beranda</a></li>
+              <li><a href="index.html#about">Tentang Kami</a></li>
+              <li><a href="index.html#services">Layanan</a></li>
+              <li><a href="index.html#departments">Dapartemen</a></li>
+              <li><a href="index.html#doctors">Dokter</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Layanan Kami</h4>
+            <ul>
+              <li><a href="index.html#services">Fasilitas Unggulan</a></li>
+              <li><a href="index.html#services">Fasilitas Pendukung</a></li>
+              <li><a href="index.html#services">Tarif Persalinan</a></li>
+              <li><a href="index.html#services">Layanan Penunjang</a></li>
+              <li><a href="index.html#services">Rawat Jalan & Inap</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Jadwal</h4>
+            <ul>
+              <li><a href="jadwalDokter.html">Jadwal Dokter</a></li>
+              <li><a href="jadwalPoliPsikolog.html">Jadwal Poli Psikolog</a></li>
+              <li><a href="jadwalPoliFisioterapi.html">Jadwal Poli Fisioterapi</a></li>
+              <li><a href="jadwalSenamHamil.html">Jadwal Senam Hamil</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Lainnya</h4>
+            <ul>
+              <li><a href="index.html#contact">Kontak</a></li>
+              <li><a href="berita.html">Berita</a></li>
+              <!-- <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">RSABK</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href=></a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/test.js"></script>
+    <script src="assets/js/jadwalPoliFisioterapi.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jadwal/senamHamil.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/* CSS External untuk Halaman Senam Hamil */
+
+/* Container Utama */
+.senam-hamil-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #f0f7fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.senam-hamil-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Memberi jarak antara dua kolom */
+    margin-top: 20px;
+}
+
+.senam-hamil-column {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.senam-hamil-column h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.25rem; /* Ukuran font untuk subjudul */
+}
+
+.senam-hamil-column ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+
+/* Heading */
+.senam-hamil-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* List Styled */
+.senam-hamil-list-styled {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.senam-hamil-list-styled li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Pendaftaran Section */
+.pendaftaran-senam-hamil-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e8f4f8;
+}
+
+.pendaftaran-senam-hamil-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #005b96;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pendaftaran-senam-hamil-hr {
+    border: 0;
+    height: 2px;
+    background: #005b96;
+    margin: 10px auto 30px;
+    width: 50px;
+}
+
+/* Call to Action Section */
+.callout-senam-hamil {
+    padding: 40px;
+    background-color:  #5b94d1	;
+    color: #fff;
+}
+
+.callout-senam-hamil h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.callout-senam-hamil p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.callout-senam-hamil .contact-info {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.callout-senam-hamil .contact-info i {
+    font-size: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .senam-hamil-heading {
+        font-size: 20px;
+    }
+
+    .pendaftaran-senam-hamil-heading {
+        font-size: 24px;
+    }
+
+    .callout-senam-hamil h3 {
+        font-size: 20px;
+    }
+
+    .callout-senam-hamil .contact-info {
+        font-size: 18px;
+    }
+}
